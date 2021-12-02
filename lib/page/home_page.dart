@@ -8,6 +8,7 @@ import 'onboarding_page.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
+
     drawer: NavigationDrawerWidget(),
         appBar: AppBar(
           title: Text(MyApp.title),

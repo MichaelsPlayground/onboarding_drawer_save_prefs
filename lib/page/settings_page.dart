@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding_drawer_save_prefs/utils/preferences_service.dart';
 import 'package:onboarding_drawer_save_prefs/utils/user_preferences.dart';
 import 'home_page.dart';
 
@@ -26,10 +25,10 @@ class _MyAppState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('User Settings'),
+          centerTitle: true,
         ),
         body: ListView(
           children: [
@@ -42,7 +41,6 @@ class _MyAppState extends State<SettingsPage> {
             TextButton(onPressed: _saveSettings, child: Text('Save Settings'))
           ],
         ),
-      ),
     );
   }
 

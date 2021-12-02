@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding_drawer_save_prefs/page/about_page.dart';
 import 'package:onboarding_drawer_save_prefs/page/favourites_page.dart';
 import 'package:onboarding_drawer_save_prefs/page/people_page.dart';
 import 'package:onboarding_drawer_save_prefs/page/settings_page.dart';
@@ -180,6 +181,12 @@ class NavigationDrawerWidget extends StatelessWidget {
       case 4:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => SettingsPage(),
+        ));
+        break;
+
+      case 5:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => AboutPage(),
         ));
         break;
     }

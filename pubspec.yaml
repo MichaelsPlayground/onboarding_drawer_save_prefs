@@ -41,6 +41,10 @@ dependencies:
   # store & load data
   shared_preferences: ^2.0.9
 
+  # to show linkable texts
+  url_launcher: ^6.0.17
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

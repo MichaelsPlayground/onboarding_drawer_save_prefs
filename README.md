@@ -23,9 +23,25 @@ void main() async {
   runApp(MyApp());
 }
 
+to store app data
 shared_preferences: ^2.0.9
 
+to show linkable texts
+url_launcher: ^6.0.17
+
 ```
+
+add in AndroidManifest.xml:
+```plaintext
+    <queries>
+        <!-- If your app opens https URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+```
+
 
 
 ```plaintext
@@ -45,9 +61,15 @@ https://github.com/JohannesMilke/shared_preferences_simple_example
 
 ```
 
-
+add in iOS/Runner/Info.plist:
 ```plaintext
-
+Add any URL schemes passed to canLaunch as LSApplicationQueriesSchemes entries in your Info.plist file.
+Example:
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>https</string>
+  <string>http</string>
+</array>
 ```
 
 

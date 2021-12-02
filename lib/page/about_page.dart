@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:onboarding_drawer_save_prefs/main.dart';
-import 'package:onboarding_drawer_save_prefs/page/home_page.dart';
 import 'package:url_launcher/link.dart';
 
 class AboutPage extends StatelessWidget {
@@ -76,7 +75,7 @@ class AboutPage extends StatelessWidget {
                   // and url scheme in Info.plist file
                   //uri: Uri.parse('https://flutter.dev'),
                   uri: Uri.parse(
-                      'http://fluttercrypto.bplaced.net/aes-playground-wc/'),
+                      'http://fluttercrypto.bplaced.net/'),
                   builder: (context, followLink) => GestureDetector(
                     onTap: followLink,
                     child: linkWidget(),

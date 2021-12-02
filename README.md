@@ -42,6 +42,16 @@ add in AndroidManifest.xml:
     </queries>
 ```
 
+add in iOS/Runner/Info.plist:
+```plaintext
+Add any URL schemes passed to canLaunch as LSApplicationQueriesSchemes entries in your Info.plist file.
+Example:
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>https</string>
+  <string>http</string>
+</array>
+```
 
 
 ```plaintext
@@ -60,18 +70,6 @@ https://www.youtube.com/watch?v=szOllHT1S7Y
 https://github.com/JohannesMilke/shared_preferences_simple_example
 
 ```
-
-add in iOS/Runner/Info.plist:
-```plaintext
-Add any URL schemes passed to canLaunch as LSApplicationQueriesSchemes entries in your Info.plist file.
-Example:
-<key>LSApplicationQueriesSchemes</key>
-<array>
-  <string>https</string>
-  <string>http</string>
-</array>
-```
-
 
 ```plaintext
 

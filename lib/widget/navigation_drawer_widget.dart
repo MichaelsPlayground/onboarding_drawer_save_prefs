@@ -37,25 +37,25 @@ class NavigationDrawerWidget extends StatelessWidget {
                   //buildSearchField(),
                   //const SizedBox(height: 24),
                   buildMenuItem(
-                    text: 'People',
+                    text: 'symmetric encryption',
                     icon: Icons.people,
                     onClicked: () => selectedItem(context, 0),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'Favourites',
+                    text: 'asymmetric encryption',
                     icon: Icons.favorite_border,
                     onClicked: () => selectedItem(context, 1),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'Workflow',
+                    text: 'asymmetric signature',
                     icon: Icons.workspaces_outline,
                     onClicked: () => selectedItem(context, 2),
                   ),
                   const SizedBox(height: 16),
                   buildMenuItem(
-                    text: 'Updates',
+                    text: 'key exchange',
                     icon: Icons.update,
                     onClicked: () => selectedItem(context, 3),
                   ),
@@ -157,7 +157,11 @@ class NavigationDrawerWidget extends StatelessWidget {
 
     return ListTile(
       leading: Icon(icon, color: color),
-      title: Text(text, style: TextStyle(color: color)),
+      title: Text(
+          text,
+          style: TextStyle(fontSize: 18,
+              color: color)
+      ),
       hoverColor: hoverColor,
       onTap: onClicked,
     );
